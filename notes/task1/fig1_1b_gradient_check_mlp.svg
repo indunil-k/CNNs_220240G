@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 690" role="img" aria-label="Gradient-check MLP 20 to 16 to 16 to 10 with ReLU, batch of 8, 778 parameters in total."><style>
+.b-in{fill:#eef1f4;stroke:#96a1ae}
+.b-lin{fill:#e7f0fb;stroke:#2a78d6;stroke-width:1.5}
+.b-act{fill:#ffffff;stroke:#96a1ae;stroke-dasharray:4 3}
+.b-loss{fill:#fbede6;stroke:#c4501f;stroke-width:1.5}
+.a-fwd{stroke:#2a78d6;stroke-width:2}
+.a-bwd{stroke:#c4501f;stroke-width:2.5}
+.m-fwd{fill:#2a78d6}.m-bwd{fill:#c4501f}
+text{font-family:"Segoe UI",Helvetica,Arial,sans-serif}
+.t-title{fill:#1a1e24;font-size:13px;font-weight:700}
+.t-sub,.t-calc,.t-tiny,.t-shape,.t-param,.t-grad,.t-hl,.t-sig,.t-relu{font-family:"DejaVu Sans Mono",Menlo,Consolas,monospace}
+.t-sub,.t-calc{fill:#5a6470;font-size:12px}
+.t-tiny{fill:#5a6470;font-size:10.5px}
+.t-shape{fill:#2a78d6;font-size:12px;font-weight:600}
+.t-param{fill:#1a1e24;font-size:12.5px;font-weight:600}
+.t-grad,.t-hl,.t-sig{fill:#c4501f;font-size:11.5px;font-weight:600}
+.t-relu{fill:#2a78d6;font-size:12px;font-weight:600}
+.t-head{fill:#5a6470;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.w{stroke:#96a1ae;stroke-width:1}.w-hl{stroke:#c4501f;stroke-width:2.5}
+.n-in{fill:#eef1f4;stroke:#96a1ae}.n-out{fill:#e7f0fb;stroke:#2a78d6;stroke-width:1.5}
+</style><rect width="780" height="690" rx="10" fill="#ffffff"/>
+<defs><marker id="fb-af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-fwd"/></marker><marker id="fb-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-bwd"/></marker></defs>
+<rect x="250" y="16" width="260" height="46" rx="6" class="b-in"/>
+<text x="380.0" y="35" text-anchor="middle" class="t-title">Input x</text>
+<text x="380.0" y="52" text-anchor="middle" class="t-sub">random numbers, float64</text>
+<line x1="380.0" y1="64" x2="380.0" y2="105" class="a-fwd" marker-end="url(#fb-af)"/>
+<text x="392.0" y="88.5" class="t-shape">(8, 20)</text>
+<rect x="250" y="108" width="260" height="46" rx="6" class="b-lin"/>
+<text x="380.0" y="127" text-anchor="middle" class="t-title">Linear 1</text>
+<text x="380.0" y="144" text-anchor="middle" class="t-sub">20 → 16</text>
+<text x="540" y="127" class="t-param">336 parameters</text>
+<text x="540" y="144" class="t-calc">W 20×16 + b 16</text>
+<text x="200" y="136" text-anchor="end" class="t-grad">dW1 (20, 16)  db1 (16,)</text>
+<line x1="380.0" y1="156" x2="380.0" y2="197" class="a-fwd" marker-end="url(#fb-af)"/>
+<text x="392.0" y="180.5" class="t-shape">(8, 16)</text>
+<rect x="250" y="200" width="260" height="46" rx="6" class="b-act"/>
+<text x="380.0" y="219" text-anchor="middle" class="t-title">ReLU</text>
+<text x="380.0" y="236" text-anchor="middle" class="t-sub">max(0, x)</text>
+<text x="540" y="219" class="t-param">0 parameters</text>
+<line x1="380.0" y1="248" x2="380.0" y2="289" class="a-fwd" marker-end="url(#fb-af)"/>
+<text x="392.0" y="272.5" class="t-shape">(8, 16)</text>
+<rect x="250" y="292" width="260" height="46" rx="6" class="b-lin"/>
+<text x="380.0" y="311" text-anchor="middle" class="t-title">Linear 2</text>
+<text x="380.0" y="328" text-anchor="middle" class="t-sub">16 → 16</text>
+<text x="540" y="311" class="t-param">272 parameters</text>
+<text x="540" y="328" class="t-calc">W 16×16 + b 16</text>
+<text x="200" y="320" text-anchor="end" class="t-grad">dW2 (16, 16)  db2 (16,)</text>
+<line x1="380.0" y1="340" x2="380.0" y2="381" class="a-fwd" marker-end="url(#fb-af)"/>
+<text x="392.0" y="364.5" class="t-shape">(8, 16)</text>
+<rect x="250" y="384" width="260" height="46" rx="6" class="b-act"/>
+<text x="380.0" y="403" text-anchor="middle" class="t-title">ReLU</text>
+<text x="380.0" y="420" text-anchor="middle" class="t-sub">max(0, x)</text>
+<text x="540" y="403" class="t-param">0 parameters</text>
+<line x1="380.0" y1="432" x2="380.0" y2="473" class="a-fwd" marker-end="url(#fb-af)"/>
+<text x="392.0" y="456.5" class="t-shape">(8, 16)</text>
+<rect x="250" y="476" width="260" height="46" rx="6" class="b-lin"/>
+<text x="380.0" y="495" text-anchor="middle" class="t-title">Linear 3</text>
+<text x="380.0" y="512" text-anchor="middle" class="t-sub">16 → 10</text>
+<text x="540" y="495" class="t-param">170 parameters</text>
+<text x="540" y="512" class="t-calc">W 16×10 + b 10</text>
+<text x="200" y="504" text-anchor="end" class="t-grad">dW3 (16, 10)  db3 (10,)</text>
+<line x1="380.0" y1="524" x2="380.0" y2="565" class="a-fwd" marker-end="url(#fb-af)"/>
+<text x="392.0" y="548.5" class="t-shape">(8, 10)  logits z</text>
+<rect x="250" y="568" width="260" height="46" rx="6" class="b-loss"/>
+<text x="380.0" y="587" text-anchor="middle" class="t-title">Softmax + cross-entropy</text>
+<text x="380.0" y="604" text-anchor="middle" class="t-sub">p = softmax(z),  L = −mean log p[y]</text>
+<text x="540" y="587" class="t-param">0 parameters</text>
+<text x="200" y="596" text-anchor="end" class="t-grad">∂L/∂z = (p − onehot)/N</text>
+<line x1="380.0" y1="616" x2="380.0" y2="657" class="a-fwd" marker-end="url(#fb-af)"/>
+<text x="392.0" y="640.5" class="t-shape"></text>
+<text x="380.0" y="672" text-anchor="middle" class="t-title">L  (one number)</text>
+<line x1="225" y1="591.0" x2="225" y2="112" class="a-bwd" marker-end="url(#fb-ab)"/>
+<text x="40" y="28" class="t-head">backward stores</text>
+</svg>

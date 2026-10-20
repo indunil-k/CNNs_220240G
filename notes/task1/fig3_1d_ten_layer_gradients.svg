@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1078 272" role="img" aria-label="A 10-layer MLP. Going backward, the sigmoid network's gradient norm falls from 1.8 at layer 10 to 0.00015 at layer 1, while the ReLU network stays between 1.4 and 3.3."><style>
+.b-in{fill:#eef1f4;stroke:#96a1ae}
+.b-lin{fill:#e7f0fb;stroke:#2a78d6;stroke-width:1.5}
+.b-act{fill:#ffffff;stroke:#96a1ae;stroke-dasharray:4 3}
+.b-loss{fill:#fbede6;stroke:#c4501f;stroke-width:1.5}
+.a-fwd{stroke:#2a78d6;stroke-width:2}
+.a-bwd{stroke:#c4501f;stroke-width:2.5}
+.m-fwd{fill:#2a78d6}.m-bwd{fill:#c4501f}
+text{font-family:"Segoe UI",Helvetica,Arial,sans-serif}
+.t-title{fill:#1a1e24;font-size:13px;font-weight:700}
+.t-sub,.t-calc,.t-tiny,.t-shape,.t-param,.t-grad,.t-hl,.t-sig,.t-relu{font-family:"DejaVu Sans Mono",Menlo,Consolas,monospace}
+.t-sub,.t-calc{fill:#5a6470;font-size:12px}
+.t-tiny{fill:#5a6470;font-size:10.5px}
+.t-shape{fill:#2a78d6;font-size:12px;font-weight:600}
+.t-param{fill:#1a1e24;font-size:12.5px;font-weight:600}
+.t-grad,.t-hl,.t-sig{fill:#c4501f;font-size:11.5px;font-weight:600}
+.t-relu{fill:#2a78d6;font-size:12px;font-weight:600}
+.t-head{fill:#5a6470;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.w{stroke:#96a1ae;stroke-width:1}.w-hl{stroke:#c4501f;stroke-width:2.5}
+.n-in{fill:#eef1f4;stroke:#96a1ae}.n-out{fill:#e7f0fb;stroke:#2a78d6;stroke-width:1.5}
+</style><rect width="1078" height="272" rx="10" fill="#ffffff"/>
+<defs><marker id="dc-af" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-fwd"/></marker><marker id="dc-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-bwd"/></marker></defs>
+<rect x="8" y="40" width="84" height="46" rx="6" class="b-in"/>
+<text x="50" y="59" text-anchor="middle" class="t-title">Input x</text>
+<text x="50" y="76" text-anchor="middle" class="t-sub">(512, 3072)</text>
+<line x1="94" y1="63.0" x2="115" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="118" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="147.0" y="59" text-anchor="middle" class="t-title">L1</text>
+<text x="147.0" y="76" text-anchor="middle" class="t-tiny">3072→256</text>
+<text x="191" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="147.0" y="194" text-anchor="middle" class="t-sig" opacity="0.50">1.5e-4</text>
+<text x="147.0" y="252" text-anchor="middle" class="t-relu">3.27</text>
+<line x1="182" y1="63.0" x2="203" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="206" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="235.0" y="59" text-anchor="middle" class="t-title">L2</text>
+<text x="235.0" y="76" text-anchor="middle" class="t-tiny">256→256</text>
+<text x="279" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="235.0" y="194" text-anchor="middle" class="t-sig" opacity="0.50">2.0e-4</text>
+<text x="235.0" y="252" text-anchor="middle" class="t-relu">1.40</text>
+<line x1="270" y1="63.0" x2="291" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="294" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="323.0" y="59" text-anchor="middle" class="t-title">L3</text>
+<text x="323.0" y="76" text-anchor="middle" class="t-tiny">256→256</text>
+<text x="367" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="323.0" y="194" text-anchor="middle" class="t-sig" opacity="0.50">7.0e-4</text>
+<text x="323.0" y="252" text-anchor="middle" class="t-relu">1.71</text>
+<line x1="358" y1="63.0" x2="379" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="382" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="411.0" y="59" text-anchor="middle" class="t-title">L4</text>
+<text x="411.0" y="76" text-anchor="middle" class="t-tiny">256→256</text>
+<text x="455" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="411.0" y="194" text-anchor="middle" class="t-sig" opacity="0.55">2.2e-3</text>
+<text x="411.0" y="252" text-anchor="middle" class="t-relu">2.14</text>
+<line x1="446" y1="63.0" x2="467" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="470" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="499.0" y="59" text-anchor="middle" class="t-title">L5</text>
+<text x="499.0" y="76" text-anchor="middle" class="t-tiny">256→256</text>
+<text x="543" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="499.0" y="194" text-anchor="middle" class="t-sig" opacity="0.62">6.5e-3</text>
+<text x="499.0" y="252" text-anchor="middle" class="t-relu">2.33</text>
+<line x1="534" y1="63.0" x2="555" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="558" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="587.0" y="59" text-anchor="middle" class="t-title">L6</text>
+<text x="587.0" y="76" text-anchor="middle" class="t-tiny">256→256</text>
+<text x="631" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="587.0" y="194" text-anchor="middle" class="t-sig" opacity="0.70">2.0e-2</text>
+<text x="587.0" y="252" text-anchor="middle" class="t-relu">2.86</text>
+<line x1="622" y1="63.0" x2="643" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="646" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="675.0" y="59" text-anchor="middle" class="t-title">L7</text>
+<text x="675.0" y="76" text-anchor="middle" class="t-tiny">256→256</text>
+<text x="719" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="675.0" y="194" text-anchor="middle" class="t-sig" opacity="0.77">6.0e-2</text>
+<text x="675.0" y="252" text-anchor="middle" class="t-relu">3.03</text>
+<line x1="710" y1="63.0" x2="731" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="734" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="763.0" y="59" text-anchor="middle" class="t-title">L8</text>
+<text x="763.0" y="76" text-anchor="middle" class="t-tiny">256→256</text>
+<text x="807" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="763.0" y="194" text-anchor="middle" class="t-sig" opacity="0.85">0.19</text>
+<text x="763.0" y="252" text-anchor="middle" class="t-relu">2.87</text>
+<line x1="798" y1="63.0" x2="819" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="822" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="851.0" y="59" text-anchor="middle" class="t-title">L9</text>
+<text x="851.0" y="76" text-anchor="middle" class="t-tiny">256→256</text>
+<text x="895" y="32" text-anchor="middle" class="t-tiny">act</text>
+<text x="851.0" y="194" text-anchor="middle" class="t-sig" opacity="0.92">0.61</text>
+<text x="851.0" y="252" text-anchor="middle" class="t-relu">3.22</text>
+<line x1="886" y1="63.0" x2="907" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="910" y="40" width="58" height="46" rx="6" class="b-lin"/>
+<text x="939.0" y="59" text-anchor="middle" class="t-title">L10</text>
+<text x="939.0" y="76" text-anchor="middle" class="t-tiny">256→10</text>
+<text x="939.0" y="194" text-anchor="middle" class="t-sig" opacity="0.99">1.82</text>
+<text x="939.0" y="252" text-anchor="middle" class="t-relu">3.25</text>
+<line x1="968" y1="63.0" x2="995" y2="63.0" class="a-fwd" marker-end="url(#dc-af)"/>
+<rect x="998" y="40" width="60" height="46" rx="6" class="b-loss"/>
+<text x="1028" y="62" text-anchor="middle" class="t-title">CE</text>
+<text x="1028" y="80" text-anchor="middle" class="t-tiny">→ loss</text>
+<line x1="1028" y1="116" x2="120" y2="116" class="a-bwd" marker-end="url(#dc-ab)"/>
+<text x="558.0" y="110" text-anchor="middle" class="t-grad">backward: blame flows right → left, multiplied by each activation's slope</text>
+<text x="8" y="172" class="t-head">Sigmoid: gradient norm of each layer, about 3 times smaller per step back</text>
+<text x="8" y="230" class="t-head">ReLU: gradient norm of each layer, roughly level at every layer</text>
+</svg>
